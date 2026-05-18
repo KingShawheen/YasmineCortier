@@ -15,8 +15,9 @@ function App() {
 
   const milestones = [
     { year: 'Present', title: 'Electric Performances', desc: 'Continuing to bring high-energy performances and soulful R&B to venues everywhere.' },
-    { year: 'Ongoing', title: 'Stand-Up Comedienne', desc: 'An established comedienne, bringing hilarious stand-up sets and magnetic stage presence to the comedy circuit.' },
-    { year: '2011', title: '"Freak Magnet" Released', desc: 'Dropped the definitive R&B/Soul album featuring hits like "Persian Conversion" and "Spiritually Just".' },
+    { year: '2014', title: 'Valleyfest Emcee', desc: 'Hosted mainstage karaoke and events at the renowned Valleyfest community celebration.' },
+    { year: '2011', title: '"Freak Magnet" Released', desc: 'Dropped the definitive R&B/Soul album featuring hits like "Persian Conversion" and "Spiritually Just", and performed at Nugestock II at the Knitting Factory.' },
+    { year: '2010', title: 'Spokane\'s Got Talent Finalist', desc: 'Showcased her hilarious Persian comic persona, reaching the finals of "Spokane\'s Got Talent".' },
     { year: '2000s', title: 'The Merq & Volcano\'s', desc: 'Hosted legendary, high-energy karaoke nights and DJ sets, cementing her local nightlife status.' }
   ];
 

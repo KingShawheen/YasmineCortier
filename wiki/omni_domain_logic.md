@@ -20,7 +20,8 @@ Yasmine Cortier is a prominent performer, singer, DJ, and karaoke host, primaril
 - **Note:** Distinct from the Egyptian actress Yasmine Sabry.
 
 ### Timeline
-- **Pre-2011 & Ongoing:** Established herself as a central figure in local nightlife, frequently hosting high-energy karaoke nights and DJing at venues such as *The Merq* and *Volcano's Party Island* in the Spokane area. She also emceed various local events, cementing her status as an entertainment powerhouse.
+- **Pre-2010 & Ongoing:** Established herself as a central figure in local nightlife, frequently hosting high-energy karaoke nights and DJing at venues such as *The Merq* and *Volcano's Party Island* in the Spokane area. 
+- **2010:** Reached the finals in the "Spokane's Got Talent" competition, performing a highly acclaimed set as a Persian comic. She was also featured on *Iranian.com* as "Iranian of the Day" celebrating her Persian heritage.
 - **2011:** Released the R&B/Soul album ***Freak Magnet***.
   - **Notable Tracks:** 
     - *Freak Magnet (feat. Shawheen Azizi)*
@@ -30,6 +31,8 @@ Yasmine Cortier is a prominent performer, singer, DJ, and karaoke host, primaril
     - *Women Unite (We Deserve Better)*
     - *Second Chance*
     - *The Abyss*
+  - **Notable Performance:** Performed at the Knitting Factory in Spokane for "Nugestock II".
+- **2014:** Hosted mainstage karaoke at the prominent Valleyfest community celebration.
 - **Present & Future:** Expanding her digital presence with a premium portfolio showcase to connect with her audience, share her history, and accept future gig bookings via email.
 
 ## Security Policies
