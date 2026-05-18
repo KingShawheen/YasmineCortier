@@ -4,15 +4,13 @@ import './index.css';
 
 function App() {
   const tracks = [
-    { id: '1', title: 'Chance (Na Ham)', duration: '3:42' },
-    { id: '2', title: 'Solace', duration: '4:15' },
-    { id: '3', title: 'Marsh Mellow', duration: '3:50' },
-    { id: '4', title: 'Bonus Track!', duration: '2:58' },
+    { id: '1', title: 'Track 1 (Coming Soon)', duration: '--:--' },
+    { id: '2', title: 'Track 2 (Coming Soon)', duration: '--:--' },
+    { id: '3', title: 'Track 3 (Coming Soon)', duration: '--:--' },
   ];
 
   const milestones = [
     { year: 'Present', title: 'Electric Performances', desc: 'Continuing to bring high-energy performances and soulful R&B to venues everywhere.' },
-    { year: '2011', title: '"Freak Magnet" Released', desc: 'Dropped the definitive R&B/Soul album featuring hits like "Solace" and "Chance (Na Ham)".' },
     { year: '2000s', title: 'The Merq & Volcano\'s', desc: 'Hosted legendary, high-energy karaoke nights and DJ sets, cementing her local nightlife status.' }
   ];
 
@@ -47,7 +45,7 @@ function App() {
             </p>
             <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap' }}>
               <a href="#music" className="btn-primary">
-                <span>Listen to Freak Magnet</span>
+                <span>Listen to the Music</span>
                 <Play size={20} />
               </a>
               <a href="#book" className="btn-primary" style={{ background: 'transparent', border: '1px solid var(--primary)', color: 'var(--text-main)' }}>
@@ -76,8 +74,8 @@ function App() {
             <div className="glass-panel" style={{ padding: '40px', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', minHeight: '400px', position: 'relative', overflow: 'hidden' }}>
               <div style={{ position: 'absolute', top: '-50%', left: '-50%', right: '-50%', bottom: '-50%', background: 'conic-gradient(from 0deg, transparent, var(--secondary), var(--primary), transparent)', animation: 'spin 10s linear infinite', opacity: 0.1, zIndex: 0 }} />
               <Disc size={120} color="var(--primary)" style={{ zIndex: 1, marginBottom: '24px' }} />
-              <h3 style={{ fontSize: '2rem', zIndex: 1 }}>Freak Magnet</h3>
-              <p style={{ color: 'var(--text-muted)', zIndex: 1 }}>Released 2011</p>
+              <h3 style={{ fontSize: '2rem', zIndex: 1, textAlign: 'center' }}>Featured Tracks</h3>
+              <p style={{ color: 'var(--text-muted)', zIndex: 1 }}></p>
             </div>
 
             {/* Tracklist */}
