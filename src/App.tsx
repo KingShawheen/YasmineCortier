@@ -7,13 +7,18 @@ function App() {
   const [activeTab, setActiveTab] = useState('home');
 
   const tracks = [
-    { id: '1', title: 'Freak Magnet', duration: '3:12' },
-    { id: '2', title: 'Persian Conversion', duration: '3:45' },
-    { id: '3', title: 'Spiritually Just', duration: '4:10' },
-    { id: '4', title: 'Love Me For What I Am', duration: '3:55' },
-    { id: '5', title: 'Women Unite (We Deserve Better)', duration: '4:20' },
-    { id: '6', title: 'Second Chance', duration: '3:30' },
-    { id: '7', title: 'The Abyss', duration: '4:05' },
+    { id: '1', title: 'Persian Conversion', duration: '3:22' },
+    { id: '2', title: 'Freak Magnet', duration: '3:05' },
+    { id: '3', title: 'Spiritually Just', duration: '4:11' },
+    { id: '4', title: 'People For Real', duration: '3:50' },
+    { id: '5', title: 'Old School Lovin', duration: '4:25' },
+    { id: '6', title: 'Second Chance', duration: '3:35' },
+    { id: '7', title: 'My Loves 3D', duration: '3:45' },
+    { id: '8', title: 'Women Unite (We Deserve Better)', duration: '4:21' },
+    { id: '9', title: 'The Abyss', duration: '4:06' },
+    { id: '10', title: 'Love Me For What I Am', duration: '3:56' },
+    { id: '11', title: 'Freak Magnet (Remix)', duration: '3:40' },
+    { id: '12', title: 'Bonus Track!', duration: '3:15' },
   ];
 
   const milestones = [
@@ -106,8 +111,8 @@ function App() {
                     <iframe 
                       width="100%" 
                       height="100%" 
-                      src="https://www.youtube.com/embed/mpWKpT6DhrU" 
-                      title="Yasmine Cortier - Freak Magnet" 
+                      src="https://www.youtube.com/embed/videoseries?list=OLAK5uy_nD1ecUAlosXPVW70nTrhTDPmalVQn2Sl8" 
+                      title="Yasmine Cortier - Freak Magnet Full Album" 
                       frameBorder="0" 
                       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
                       allowFullScreen
