@@ -88,14 +88,14 @@ function App() {
               {/* Ethereal Ambient Background */}
               <div style={{
                 position: 'absolute',
-                top: 0,
+                top: '-100px',
                 left: 0,
                 right: 0,
                 bottom: 0,
                 backgroundImage: 'url(/hero-yasmine-clean.png)',
                 backgroundSize: 'cover',
                 backgroundPosition: 'center top',
-                filter: 'blur(10px) opacity(0.35) saturate(1.2)',
+                filter: 'blur(12px) opacity(0.35) saturate(1.2)',
                 zIndex: -1,
                 pointerEvents: 'none'
               }} />
