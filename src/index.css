@@ -167,23 +167,24 @@ a {
 .ethereal-bg {
   position: absolute;
   top: -100px;
-  left: -30vw;
+  left: -40vw;
   right: 0;
   bottom: 0;
   background-image: url(/hero-yasmine-clean.png);
   background-size: cover;
   background-position: center top;
-  filter: blur(12px) opacity(0.35) saturate(1.2);
+  filter: blur(8px) opacity(0.4) saturate(1.2);
   z-index: -1;
   pointer-events: none;
 }
 
 @media (max-width: 768px) {
   .ethereal-bg {
-    left: -15vw;
-    right: -15vw;
+    left: -10vw;
+    right: -10vw;
+    background-position: 80% top;
     transform-origin: center;
-    transform: translateY(25vh) scale(1.2);
+    transform: translateY(20vh) scale(1.3);
     -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 25%, black 75%, transparent 100%);
     mask-image: linear-gradient(to bottom, transparent 0%, black 25%, black 75%, transparent 100%);
   }
