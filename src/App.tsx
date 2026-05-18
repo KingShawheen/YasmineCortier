@@ -4,16 +4,19 @@ import './index.css';
 
 function App() {
   const tracks = [
-    { id: '1', title: 'Chance (Na Ham)', duration: '3:42' },
-    { id: '2', title: 'Solace (Original Mix)', duration: '4:15' },
-    { id: '3', title: 'Marsh Mellow (Original Mix)', duration: '3:50' },
-    { id: '4', title: 'Spiritually Just', duration: '3:30' },
-    { id: '5', title: 'Persian Conversion', duration: '4:01' },
-    { id: '6', title: 'Bonus Track!', duration: '2:58' },
+    { id: '1', title: 'Freak Magnet', duration: '3:12' },
+    { id: '2', title: 'Persian Conversion', duration: '3:45' },
+    { id: '3', title: 'Spiritually Just', duration: '4:10' },
+    { id: '4', title: 'Love Me For What I Am', duration: '3:55' },
+    { id: '5', title: 'Women Unite (We Deserve Better)', duration: '4:20' },
+    { id: '6', title: 'Second Chance', duration: '3:30' },
+    { id: '7', title: 'The Abyss', duration: '4:05' },
   ];
 
   const milestones = [
     { year: 'Present', title: 'Electric Performances', desc: 'Continuing to bring high-energy performances and soulful R&B to venues everywhere.' },
+    { year: 'Ongoing', title: 'Stand-Up Comedienne', desc: 'An established comedienne, bringing hilarious stand-up sets and magnetic stage presence to the comedy circuit.' },
+    { year: '2011', title: '"Freak Magnet" Released', desc: 'Dropped the definitive R&B/Soul album featuring hits like "Persian Conversion" and "Spiritually Just".' },
     { year: '2000s', title: 'The Merq & Volcano\'s', desc: 'Hosted legendary, high-energy karaoke nights and DJ sets, cementing her local nightlife status.' }
   ];
 
@@ -44,7 +47,7 @@ function App() {
               YASMINE<br/><span className="text-gradient">CORTIER</span>
             </h1>
             <p style={{ fontSize: '1.25rem', color: 'var(--text-muted)', maxWidth: '600px', marginBottom: '40px' }}>
-              Singer • DJ • Entertainer. Bringing magnetic presence, electric R&B, and premium nightlife energy to every stage.
+              Singer • DJ • Comedienne. Bringing magnetic presence, electric R&B, and premium nightlife energy to every stage.
             </p>
             <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap' }}>
               <a href="#music" className="btn-primary">
@@ -74,11 +77,13 @@ function App() {
 
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '32px' }}>
             {/* Album Cover Art Area */}
-            <div className="glass-panel" style={{ padding: '40px', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', minHeight: '400px', position: 'relative', overflow: 'hidden' }}>
-              <div style={{ position: 'absolute', top: '-50%', left: '-50%', right: '-50%', bottom: '-50%', background: 'conic-gradient(from 0deg, transparent, var(--secondary), var(--primary), transparent)', animation: 'spin 10s linear infinite', opacity: 0.1, zIndex: 0 }} />
-              <Disc size={120} color="var(--primary)" style={{ zIndex: 1, marginBottom: '24px' }} />
-              <h3 style={{ fontSize: '2rem', zIndex: 1, textAlign: 'center' }}>Freak Magnet</h3>
-              <p style={{ color: 'var(--text-muted)', zIndex: 1 }}>Released 2011</p>
+            <div className="glass-panel" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', minHeight: '400px', position: 'relative', overflow: 'hidden', padding: 0 }}>
+              <div style={{ position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, backgroundImage: 'url(/freak-magnet-cover.jpg)', backgroundSize: 'cover', backgroundPosition: 'center', filter: 'brightness(0.8)', zIndex: 0 }} />
+              <div style={{ position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, background: 'linear-gradient(to top, rgba(15, 23, 42, 0.9), transparent)', zIndex: 1 }} />
+              <div style={{ position: 'relative', zIndex: 2, padding: '40px', width: '100%', height: '100%', display: 'flex', flexDirection: 'column', justifyContent: 'flex-end', alignItems: 'center' }}>
+                <h3 style={{ fontSize: '2.5rem', textShadow: '0 2px 10px rgba(0,0,0,0.5)' }}>Freak Magnet</h3>
+                <p style={{ color: 'rgba(255, 255, 255, 0.8)', textShadow: '0 2px 5px rgba(0,0,0,0.5)' }}>Released 2011</p>
+              </div>
             </div>
 
             {/* Tracklist */}

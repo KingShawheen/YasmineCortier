@@ -14,21 +14,22 @@ This document serves as the high-density master file for project-specific busine
 Yasmine Cortier is a prominent performer, singer, DJ, and karaoke host, primarily known for her vibrant presence in the Spokane, Washington entertainment scene. 
 
 ### Identity & Essence
-- **Roles:** Singer, Performer, DJ, Emcee, Karaoke Host.
-- **Style/Genre:** Contemporary R&B, Soul.
-- **Vibe:** Electric, soulful, engaging, community-centric, premium nightlife energy. 
+- **Roles:** Singer, Performer, DJ, Emcee, Karaoke Host, Comedienne.
+- **Style/Genre:** Contemporary R&B, Soul, Stand-up Comedy.
+- **Vibe:** Electric, soulful, engaging, community-centric, premium nightlife energy, hilarious. 
 - **Note:** Distinct from the Egyptian actress Yasmine Sabry.
 
 ### Timeline
 - **Pre-2011 & Ongoing:** Established herself as a central figure in local nightlife, frequently hosting high-energy karaoke nights and DJing at venues such as *The Merq* and *Volcano's Party Island* in the Spokane area. She also emceed various local events, cementing her status as an entertainment powerhouse.
 - **2011:** Released the R&B/Soul album ***Freak Magnet***.
   - **Notable Tracks:** 
-    - *Chance (Na Ham)*
-    - *Solace (Original Mix)*
-    - *Marsh Mellow (Original Mix)*
+    - *Freak Magnet (feat. Shawheen Azizi)*
+    - *Persian Conversion (feat. Shawheen Azizi)*
     - *Spiritually Just*
-    - *Persian Conversion*
-    - *Bonus Track!*
+    - *Love Me For What I Am*
+    - *Women Unite (We Deserve Better)*
+    - *Second Chance*
+    - *The Abyss*
 - **Present & Future:** Expanding her digital presence with a premium portfolio showcase to connect with her audience, share her history, and accept future gig bookings via email.
 
 ## Security Policies
