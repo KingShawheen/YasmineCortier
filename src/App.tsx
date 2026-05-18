@@ -1,4 +1,4 @@
-import { Play, Disc, Mic2, Music, Mail, Hash, MessageCircle } from 'lucide-react';
+import { Play, Mic2, Music, Mail, Hash, MessageCircle } from 'lucide-react';
 import { motion } from 'framer-motion';
 import './index.css';
 
@@ -56,7 +56,7 @@ function App() {
                 <span>Listen to Freak Magnet</span>
                 <Play size={20} />
               </a>
-              <a href="#book" className="btn-primary" style={{ background: 'transparent', border: '1px solid var(--primary)', color: 'var(--text-main)' }}>
+              <a href="mailto:PersianComic@gmail.com?subject=Booking%20Inquiry%20-%20Yasmine%20Cortier" className="btn-primary" style={{ background: 'transparent', border: '1px solid var(--primary)', color: 'var(--text-main)' }}>
                 <span>Book Now</span>
               </a>
             </div>
@@ -112,7 +112,10 @@ function App() {
       {/* Timeline Section */}
       <section className="section-padding" style={{ background: 'linear-gradient(to bottom, rgba(15,23,42,0) 0%, rgba(30,41,59,0.3) 50%, rgba(15,23,42,0) 100%)' }}>
         <div className="container">
-          <h2 style={{ fontSize: '3rem', marginBottom: '64px', textAlign: 'center' }}>The <span className="text-gradient">Journey</span></h2>
+          <h2 style={{ fontSize: '3rem', marginBottom: '16px', textAlign: 'center' }}>The <span className="text-gradient">Journey</span></h2>
+          <p style={{ textAlign: 'center', color: 'var(--text-muted)', maxWidth: '700px', margin: '0 auto 64px auto', fontSize: '1.2rem', lineHeight: 1.8 }}>
+            For over 30 years, Yasmine Cortier has been the heartbeat of the Spokane entertainment scene. From laying down the early roots of community solidarity in the mid-90s, to dominating local nightlife, the stage is her home. She doesn't just perform—she creates an unbreakable, emotional connection with her audience, proving that true artistry is about uniting a community through laughter, rhythm, and soul.
+          </p>
           
           <div style={{ maxWidth: '800px', margin: '0 auto', position: 'relative' }}>
             <div style={{ position: 'absolute', left: '50%', top: 0, bottom: 0, width: '2px', background: 'linear-gradient(to bottom, transparent, var(--primary), var(--secondary), transparent)', transform: 'translateX(-50%)' }} />
@@ -167,17 +170,12 @@ function App() {
               Bring the magnetic energy of Yasmine Cortier to your next event. For DJ sets, vocal performances, and hosting.
             </p>
 
-            <form style={{ display: 'flex', flexDirection: 'column', gap: '20px', textAlign: 'left' }}>
-              <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '20px' }}>
-                <input type="text" placeholder="Your Name" style={{ background: 'rgba(15,23,42,0.6)', border: '1px solid rgba(255,255,255,0.1)', padding: '16px', borderRadius: '8px', color: '#fff', fontFamily: 'var(--font-body)' }} />
-                <input type="email" placeholder="Email Address" style={{ background: 'rgba(15,23,42,0.6)', border: '1px solid rgba(255,255,255,0.1)', padding: '16px', borderRadius: '8px', color: '#fff', fontFamily: 'var(--font-body)' }} />
-              </div>
-              <textarea placeholder="Event Details & Message" rows={4} style={{ background: 'rgba(15,23,42,0.6)', border: '1px solid rgba(255,255,255,0.1)', padding: '16px', borderRadius: '8px', color: '#fff', fontFamily: 'var(--font-body)', resize: 'vertical' }}></textarea>
-              <button type="submit" className="btn-primary" style={{ alignSelf: 'flex-start', marginTop: '16px' }}>
-                <span>Send Request</span>
-                <Mail size={20} />
-              </button>
-            </form>
+            <div style={{ display: 'flex', justifyContent: 'center', marginTop: '32px' }}>
+              <a href="mailto:PersianComic@gmail.com?subject=Booking%20Inquiry%20-%20Yasmine%20Cortier" className="btn-primary" style={{ padding: '20px 48px', fontSize: '1.2rem' }}>
+                <span>Email PersianComic@gmail.com</span>
+                <Mail size={24} />
+              </a>
+            </div>
           </div>
         </div>
       </section>
