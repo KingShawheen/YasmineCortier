@@ -89,7 +89,7 @@ function App() {
               <div style={{
                 position: 'absolute',
                 top: '-100px',
-                left: 0,
+                left: '-30vw',
                 right: 0,
                 bottom: 0,
                 backgroundImage: 'url(/hero-yasmine-clean.png)',
