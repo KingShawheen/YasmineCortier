@@ -180,9 +180,11 @@ a {
 
 @media (max-width: 768px) {
   .ethereal-bg {
-    left: 0;
-    right: 0;
-    transform-origin: top center;
-    transform: scale(2.5);
+    left: -15vw;
+    right: -15vw;
+    transform-origin: center;
+    transform: translateY(25vh) scale(1.2);
+    -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 25%, black 75%, transparent 100%);
+    mask-image: linear-gradient(to bottom, transparent 0%, black 25%, black 75%, transparent 100%);
   }
 }
