@@ -78,8 +78,29 @@ function App() {
       <main style={{ paddingBottom: '100px', paddingTop: '100px' }}>
         <AnimatePresence mode="wait">
           {activeTab === 'home' && (
-            <motion.section key="home" initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -20 }} transition={{ duration: 0.4 }} style={{ minHeight: '80vh', display: 'flex', alignItems: 'center' }}>
-              <div className="container">
+            <motion.section key="home" initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -20 }} transition={{ duration: 0.4 }} style={{ minHeight: '80vh', display: 'flex', alignItems: 'center', position: 'relative', borderRadius: '24px', overflow: 'hidden', marginTop: '24px' }}>
+              
+              {/* Cinematic Background Image */}
+              <div style={{
+                position: 'absolute',
+                top: 0, left: 0, right: 0, bottom: 0,
+                backgroundImage: 'url(/hero-yasmine.png)',
+                backgroundSize: 'cover',
+                backgroundPosition: 'center 30%',
+                zIndex: -2,
+                filter: 'blur(1px) contrast(1.15) brightness(0.85)',
+                transform: 'scale(1.02)'
+              }} />
+              
+              {/* Gradient Overlay for Text Readability */}
+              <div style={{
+                position: 'absolute',
+                top: 0, left: 0, right: 0, bottom: 0,
+                background: 'linear-gradient(to right, var(--bg-dark) 0%, rgba(10, 10, 12, 0.8) 50%, rgba(10, 10, 12, 0.2) 100%), linear-gradient(to top, var(--bg-dark) 0%, transparent 60%)',
+                zIndex: -1
+              }} />
+
+              <div className="container" style={{ padding: '64px 32px' }}>
                 <h2 style={{ fontSize: '1.5rem', color: 'var(--primary)', letterSpacing: '4px', textTransform: 'uppercase', marginBottom: '16px', textShadow: '0 0 20px rgba(212, 175, 55, 0.3)' }}>
                   The Essence of Soul
                 </h2>
