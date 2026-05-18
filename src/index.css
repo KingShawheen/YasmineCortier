@@ -180,7 +180,9 @@ a {
 
 @media (max-width: 768px) {
   .ethereal-bg {
-    left: -50vw;
-    transform: scale(1.6) translateY(5vh);
+    left: 0;
+    right: 0;
+    transform-origin: top center;
+    transform: scale(2.5);
   }
 }
