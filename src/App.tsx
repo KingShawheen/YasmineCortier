@@ -88,14 +88,14 @@ function App() {
               {/* Ethereal Ambient Background */}
               <div style={{
                 position: 'absolute',
-                top: '-100px',
+                top: 0,
                 left: 0,
                 right: 0,
                 bottom: 0,
                 backgroundImage: 'url(/hero-yasmine-clean.png)',
                 backgroundSize: 'cover',
-                backgroundPosition: 'center',
-                filter: 'blur(20px) opacity(0.3) saturate(1.2)',
+                backgroundPosition: 'center top',
+                filter: 'blur(10px) opacity(0.35) saturate(1.2)',
                 zIndex: -1,
                 pointerEvents: 'none'
               }} />
@@ -112,7 +112,7 @@ function App() {
                     borderRadius: '50%',
                     backgroundImage: 'url(/hero-yasmine-clean.png)',
                     backgroundSize: 'cover',
-                    backgroundPosition: 'center 10%',
+                    backgroundPosition: 'center top',
                     margin: '0 auto 40px auto',
                     border: '3px solid rgba(212, 175, 55, 0.5)',
                     boxShadow: '0 0 50px rgba(212, 175, 55, 0.2), inset 0 0 40px rgba(0,0,0,0.5)',
