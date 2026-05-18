@@ -86,19 +86,7 @@ function App() {
             <motion.section key="home" initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -20 }} transition={{ duration: 0.4 }} style={{ minHeight: '80vh', display: 'flex', alignItems: 'center', padding: '40px 0', position: 'relative' }}>
               
               {/* Ethereal Ambient Background */}
-              <div style={{
-                position: 'absolute',
-                top: '-100px',
-                left: '-30vw',
-                right: 0,
-                bottom: 0,
-                backgroundImage: 'url(/hero-yasmine-clean.png)',
-                backgroundSize: 'cover',
-                backgroundPosition: 'center top',
-                filter: 'blur(12px) opacity(0.35) saturate(1.2)',
-                zIndex: -1,
-                pointerEvents: 'none'
-              }} />
+              <div className="ethereal-bg" />
 
               <div className="container" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center', width: '100%', position: 'relative', zIndex: 1 }}>
                 

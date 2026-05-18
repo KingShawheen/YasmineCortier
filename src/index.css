@@ -162,3 +162,25 @@ a {
   box-shadow: 0 0 20px rgba(212, 175, 55, 0.3);
   transform: scale(1.02);
 }
+
+/* Ethereal Background Effect */
+.ethereal-bg {
+  position: absolute;
+  top: -100px;
+  left: -30vw;
+  right: 0;
+  bottom: 0;
+  background-image: url(/hero-yasmine-clean.png);
+  background-size: cover;
+  background-position: center top;
+  filter: blur(12px) opacity(0.35) saturate(1.2);
+  z-index: -1;
+  pointer-events: none;
+}
+
+@media (max-width: 768px) {
+  .ethereal-bg {
+    left: -50vw;
+    transform: scale(1.6) translateY(5vh);
+  }
+}
