@@ -20,6 +20,7 @@ Yasmine Cortier is a prominent performer, singer, DJ, and karaoke host, primaril
 - **Note:** Distinct from the Egyptian actress Yasmine Sabry.
 
 ### Timeline
+- **1996:** Relocated to the Spokane area and established deep roots in the community, including early foundational work with the "Walk For Success" outreach and community initiative.
 - **Pre-2010 & Ongoing:** Established herself as a central figure in local nightlife, frequently hosting high-energy karaoke nights and DJing at venues such as *The Merq* and *Volcano's Party Island* in the Spokane area. 
 - **2010:** Reached the finals in the "Spokane's Got Talent" competition, performing a highly acclaimed set as a Persian comic. She was also featured on *Iranian.com* as "Iranian of the Day" celebrating her Persian heritage.
 - **2011:** Released the R&B/Soul album ***Freak Magnet***.

@@ -18,7 +18,8 @@ function App() {
     { year: '2014', title: 'Valleyfest Emcee', desc: 'Hosted mainstage karaoke and events at the renowned Valleyfest community celebration.' },
     { year: '2011', title: '"Freak Magnet" Released', desc: 'Dropped the definitive R&B/Soul album featuring hits like "Persian Conversion" and "Spiritually Just", and performed at Nugestock II at the Knitting Factory.' },
     { year: '2010', title: 'Spokane\'s Got Talent Finalist', desc: 'Showcased her hilarious Persian comic persona, reaching the finals of "Spokane\'s Got Talent".' },
-    { year: '2000s', title: 'The Merq & Volcano\'s', desc: 'Hosted legendary, high-energy karaoke nights and DJ sets, cementing her local nightlife status.' }
+    { year: '2000s', title: 'The Merq & Volcano\'s', desc: 'Hosted legendary, high-energy karaoke nights and DJ sets, cementing her local nightlife status.' },
+    { year: '1996', title: 'Arrival in Spokane & Walk For Success', desc: 'Moved to the Spokane area and immediately began impacting the community, including her early involvement with the "Walk For Success" initiative.' }
   ];
 
   return (
@@ -28,7 +29,7 @@ function App() {
         style={{
           position: 'fixed',
           top: 0, left: 0, right: 0, bottom: 0,
-          background: 'radial-gradient(circle at 50% 0%, rgba(107, 33, 168, 0.2) 0%, rgba(15, 23, 42, 1) 70%)',
+          background: 'radial-gradient(circle at 50% -20%, rgba(247, 37, 133, 0.15) 0%, rgba(212, 175, 55, 0.05) 40%, rgba(7, 11, 25, 1) 80%)',
           zIndex: -1
         }}
       />
@@ -41,7 +42,7 @@ function App() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <h2 style={{ fontSize: '1.5rem', color: 'var(--secondary)', letterSpacing: '4px', textTransform: 'uppercase', marginBottom: '16px' }}>
+            <h2 style={{ fontSize: '1.5rem', color: 'var(--primary)', letterSpacing: '4px', textTransform: 'uppercase', marginBottom: '16px', textShadow: '0 0 20px rgba(212, 175, 55, 0.3)' }}>
               The Essence of Soul
             </h2>
             <h1 style={{ fontSize: 'clamp(4rem, 10vw, 8rem)', fontWeight: 800, margin: '0 0 24px -6px', lineHeight: 1.1 }}>

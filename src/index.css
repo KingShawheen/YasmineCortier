@@ -1,13 +1,15 @@
 :root {
-  /* Colors */
-  --bg-color: #0F172A;
-  --bg-surface: #1E293B;
-  --primary: #8B5CF6;
-  --primary-dark: #6B21A8;
-  --secondary: #D946EF;
-  --text-main: #F8FAFC;
-  --text-muted: #94A3B8;
-
+  /* Persian Fusion Design System */
+  --bg-dark: #070B19; /* Deepest Lapis/Midnight */
+  --bg-card: rgba(16, 24, 46, 0.4); /* Glass Lapis */
+  --primary: #D4AF37; /* Persian Gold */
+  --primary-hover: #C5A017;
+  --secondary: #F72585; /* Persian Rose / Nightlife Magenta */
+  --accent: #00B4D8; /* Turquoise / Cyan */
+  
+  --text-main: #FDFDFD;
+  --text-muted: #A0ABC0;
+  
   /* Typography */
   --font-heading: 'Outfit', sans-serif;
   --font-body: 'Inter', sans-serif;
@@ -24,7 +26,7 @@
 }
 
 body {
-  background-color: var(--bg-color);
+  background-color: var(--bg-dark);
   color: var(--text-main);
   font-family: var(--font-body);
   line-height: 1.6;
