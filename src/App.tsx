@@ -24,9 +24,10 @@ function App() {
   const milestones = [
     { year: 'Present', title: 'The Iron Horse Residency', desc: 'For over 15 years, Yasmine has been the cornerstone of Spokane Valley nightlife, hosting legendary, packed-house events and karaoke at The Iron Horse Bar & Grill every Wednesday, Thursday, and Saturday night.' },
     { year: '2014', title: 'Valleyfest Emcee', desc: 'Hosted mainstage karaoke and events at the renowned Valleyfest community celebration.' },
-    { year: '2011', title: '"Freak Magnet" Released', desc: 'Dropped the definitive R&B/Soul album featuring hits like "Persian Conversion" and "Spiritually Just", and performed at Nugestock II at the Knitting Factory.' },
-    { year: '2010', title: 'Spokane\'s Got Talent Finalist', desc: 'Showcased her hilarious Persian comic persona, reaching the finals of "Spokane\'s Got Talent".' },
-    { year: '2000s', title: 'The Merq & Volcano\'s', desc: 'Hosted legendary, high-energy karaoke nights and DJ sets, cementing her local nightlife status.' },
+    { year: '2011', title: 'Knitting Factory & "Freak Magnet"', desc: 'Dropped the definitive R&B/Soul album featuring hits like "Persian Conversion", and performed live comedy at "Nugestock II" at the Knitting Factory.' },
+    { year: '2010', title: 'Bing Crosby Theater', desc: 'Showcased her hilarious Persian comic persona at the historic Bing Crosby Theater, reaching the finals of "Spokane\'s Got Talent".' },
+    { year: '2007', title: 'Volcano\'s Party Island', desc: 'Worked as a resident DJ and karaoke host, elevating the energy at Volcano\'s Party Island in Spokane.' },
+    { year: '2000s', title: 'The Merq', desc: 'Known as the ultimate "karaoke maven," she hosted high-energy nights at The Merq, cementing her early nightlife status.' },
     { year: '1995-1996', title: 'Arrival & "Walk For Success"', desc: 'Moved to Spokane and immediately impacted the community by participating in the "Walk For Success"—a grassroots SCOPE initiative to promote neighborhood unity and stand against drugs and violence in the Edgecliff area.' }
   ];
 
