@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Play, Mic2, Mail, Home, Disc, Star, Calendar } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import './index.css';
@@ -6,6 +6,11 @@ import './index.css';
 function App() {
   const [activeTab, setActiveTab] = useState('home');
   const [activeTrackIndex, setActiveTrackIndex] = useState(0);
+
+  // Reset scroll position when switching tabs
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }, [activeTab]);
 
   const tracks = [
     { id: '1', title: 'Persian Conversion', duration: '3:22' },
