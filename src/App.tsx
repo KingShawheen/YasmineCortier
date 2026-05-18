@@ -5,6 +5,7 @@ import './index.css';
 
 function App() {
   const [activeTab, setActiveTab] = useState('home');
+  const [activeTrackIndex, setActiveTrackIndex] = useState(0);
 
   const tracks = [
     { id: '1', title: 'Persian Conversion', duration: '3:22' },
@@ -112,7 +113,7 @@ function App() {
                     <iframe 
                       width="100%" 
                       height="100%" 
-                      src="https://www.youtube.com/embed/videoseries?list=OLAK5uy_nD1ecUAlosXPVW70nTrhTDPmalVQn2Sl8" 
+                      src={`https://www.youtube.com/embed/videoseries?list=OLAK5uy_nD1ecUAlosXPVW70nTrhTDPmalVQn2Sl8&index=${activeTrackIndex + 1}&autoplay=1`} 
                       title="Yasmine Cortier - Freak Magnet Full Album" 
                       frameBorder="0" 
                       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
@@ -123,22 +124,26 @@ function App() {
 
                   <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
                     {tracks.map((track, index) => (
-                      <div key={track.id} className="glass-panel glow-hover" style={{ padding: '24px', display: 'flex', alignItems: 'center', justifyContent: 'space-between', cursor: 'pointer', transition: 'all 0.3s ease' }}>
+                      <div 
+                        key={track.id} 
+                        className="glass-panel glow-hover" 
+                        onClick={() => {
+                          setActiveTrackIndex(index);
+                          window.scrollTo({ top: 0, behavior: 'smooth' });
+                        }}
+                        style={{ padding: '24px', display: 'flex', alignItems: 'center', justifyContent: 'space-between', cursor: 'pointer', transition: 'all 0.3s ease', background: activeTrackIndex === index ? 'rgba(212, 175, 55, 0.1)' : 'rgba(255,255,255,0.02)', border: activeTrackIndex === index ? '1px solid var(--primary)' : '1px solid rgba(255,255,255,0.05)' }}
+                      >
                         <div style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
-                          <span style={{ color: 'var(--text-muted)', fontFamily: 'var(--font-heading)', fontSize: '1.2rem' }}>0{index + 1}</span>
-                          <h4 style={{ fontSize: '1.2rem', fontWeight: 500 }}>{track.title}</h4>
+                          <span style={{ color: activeTrackIndex === index ? 'var(--primary)' : 'var(--text-muted)', fontFamily: 'var(--font-heading)', fontSize: '1.2rem', fontWeight: activeTrackIndex === index ? 700 : 400 }}>{index < 9 ? `0${index + 1}` : index + 1}</span>
+                          <h4 style={{ fontSize: '1.2rem', fontWeight: activeTrackIndex === index ? 700 : 500, color: activeTrackIndex === index ? 'var(--text-light)' : 'var(--text-muted)' }}>{track.title}</h4>
                         </div>
                         <div style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
-                          <span style={{ color: 'var(--text-muted)' }}>{track.duration}</span>
+                          <span style={{ color: activeTrackIndex === index ? 'var(--primary)' : 'var(--text-muted)' }}>{track.duration}</span>
                           <button 
-                            onClick={(e) => {
-                              e.stopPropagation();
-                              window.open(`https://www.youtube.com/results?search_query=Yasmine+Cortier+${encodeURIComponent(track.title)}`, '_blank');
-                            }}
-                            style={{ background: 'transparent', border: 'none', color: 'var(--secondary)', cursor: 'pointer' }}
-                            title="Play on YouTube"
+                            style={{ background: 'transparent', border: 'none', color: activeTrackIndex === index ? 'var(--primary)' : 'var(--secondary)', cursor: 'pointer' }}
+                            title="Play Track"
                           >
-                            <Play size={24} fill="currentColor" />
+                            <Play size={24} fill={activeTrackIndex === index ? 'currentColor' : 'none'} />
                           </button>
                         </div>
                       </div>
