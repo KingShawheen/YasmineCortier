@@ -86,9 +86,9 @@ function App() {
                 top: 0, left: 0, right: 0, bottom: 0,
                 backgroundImage: 'url(/hero-yasmine.jpg)',
                 backgroundSize: 'cover',
-                backgroundPosition: 'center 30%',
+                backgroundPosition: 'center 25%',
                 zIndex: -2,
-                filter: 'blur(1px) contrast(1.15) brightness(0.85)',
+                filter: 'blur(0.5px) contrast(1.1) brightness(0.9)',
                 transform: 'scale(1.02)'
               }} />
               
@@ -100,24 +100,26 @@ function App() {
                 zIndex: -1
               }} />
 
-              <div className="container" style={{ padding: '64px 32px' }}>
-                <h2 style={{ fontSize: '1.5rem', color: 'var(--primary)', letterSpacing: '4px', textTransform: 'uppercase', marginBottom: '16px', textShadow: '0 0 20px rgba(212, 175, 55, 0.3)' }}>
-                  The Essence of Soul
-                </h2>
-                <h1 style={{ fontSize: 'clamp(4rem, 10vw, 8rem)', fontWeight: 800, margin: '0 0 24px -6px', lineHeight: 1.1 }}>
-                  YASMINE<br/><span className="text-gradient">CORTIER</span>
-                </h1>
-                <p style={{ fontSize: '1.25rem', color: 'var(--text-muted)', maxWidth: '600px', marginBottom: '40px' }}>
-                  Singer • DJ • Comedienne. Bringing magnetic presence, electric R&B, and premium nightlife energy to every stage.
-                </p>
-                <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap' }}>
-                  <button onClick={() => setActiveTab('music')} className="btn-primary" style={{ border: 'none' }}>
-                    <span>Listen to Freak Magnet</span>
-                    <Play size={20} />
-                  </button>
-                  <button onClick={() => setActiveTab('book')} className="btn-primary" style={{ background: 'transparent', border: '1px solid var(--primary)', color: 'var(--text-main)' }}>
-                    <span>Book Now</span>
-                  </button>
+              <div className="container" style={{ padding: '80px 32px', width: '100%' }}>
+                <div style={{ maxWidth: '650px' }}>
+                  <h2 style={{ fontSize: '1.25rem', color: 'var(--primary)', letterSpacing: '4px', textTransform: 'uppercase', marginBottom: '16px', textShadow: '0 0 20px rgba(212, 175, 55, 0.3)' }}>
+                    The Essence of Soul
+                  </h2>
+                  <h1 style={{ fontSize: 'clamp(3.5rem, 8vw, 7.5rem)', fontWeight: 800, margin: '0 0 24px -4px', lineHeight: 1.05 }}>
+                    YASMINE<br/><span className="text-gradient">CORTIER</span>
+                  </h1>
+                  <p style={{ fontSize: '1.15rem', color: 'var(--text-muted)', maxWidth: '500px', marginBottom: '40px', lineHeight: 1.6 }}>
+                    Singer • DJ • Comedienne. Bringing magnetic presence, electric R&B, and premium nightlife energy to every stage.
+                  </p>
+                  <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap' }}>
+                    <button onClick={() => setActiveTab('music')} className="btn-primary" style={{ border: 'none' }}>
+                      <span>Listen to Freak Magnet</span>
+                      <Play size={20} />
+                    </button>
+                    <button onClick={() => setActiveTab('book')} className="btn-outline">
+                      <span>Book Now</span>
+                    </button>
+                  </div>
                 </div>
               </div>
             </motion.section>
