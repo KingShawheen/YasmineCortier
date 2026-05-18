@@ -165,8 +165,8 @@ a {
 
 /* Ethereal Background Effect */
 .ethereal-bg {
-  position: absolute;
-  top: -100px;
+  position: fixed;
+  top: 0;
   left: -30vw;
   right: 0;
   bottom: 0;

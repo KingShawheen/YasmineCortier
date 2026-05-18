@@ -80,7 +80,7 @@ function App() {
       </nav>
 
       {/* Main Content Area */}
-      <main style={{ paddingBottom: '100px', paddingTop: '100px' }}>
+      <main style={{ paddingBottom: '100px', paddingTop: '100px', flexGrow: 1, display: 'flex', flexDirection: 'column' }}>
         <AnimatePresence mode="wait">
           {activeTab === 'home' && (
             <motion.section key="home" initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -20 }} transition={{ duration: 0.4 }} style={{ minHeight: '80vh', display: 'flex', alignItems: 'center', padding: '40px 0', position: 'relative' }}>
