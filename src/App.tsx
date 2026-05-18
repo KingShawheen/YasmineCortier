@@ -17,7 +17,7 @@ function App() {
   ];
 
   const milestones = [
-    { year: 'Present', title: 'Electric Performances', desc: 'Continuing to bring high-energy performances and soulful R&B to venues everywhere.' },
+    { year: 'Present', title: 'The Iron Horse Residency', desc: 'For over 15 years, Yasmine has been the cornerstone of Spokane Valley nightlife, hosting legendary, packed-house events and karaoke at The Iron Horse Bar & Grill every Wednesday, Thursday, and Saturday night.' },
     { year: '2014', title: 'Valleyfest Emcee', desc: 'Hosted mainstage karaoke and events at the renowned Valleyfest community celebration.' },
     { year: '2011', title: '"Freak Magnet" Released', desc: 'Dropped the definitive R&B/Soul album featuring hits like "Persian Conversion" and "Spiritually Just", and performed at Nugestock II at the Knitting Factory.' },
     { year: '2010', title: 'Spokane\'s Got Talent Finalist', desc: 'Showcased her hilarious Persian comic persona, reaching the finals of "Spokane\'s Got Talent".' },
