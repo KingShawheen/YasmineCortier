@@ -83,8 +83,24 @@ function App() {
       <main style={{ paddingBottom: '100px', paddingTop: '100px' }}>
         <AnimatePresence mode="wait">
           {activeTab === 'home' && (
-            <motion.section key="home" initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -20 }} transition={{ duration: 0.4 }} style={{ minHeight: '80vh', display: 'flex', alignItems: 'center', padding: '40px 0' }}>
-              <div className="container" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center', width: '100%' }}>
+            <motion.section key="home" initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -20 }} transition={{ duration: 0.4 }} style={{ minHeight: '80vh', display: 'flex', alignItems: 'center', padding: '40px 0', position: 'relative' }}>
+              
+              {/* Ethereal Ambient Background */}
+              <div style={{
+                position: 'absolute',
+                top: '-100px',
+                left: 0,
+                right: 0,
+                bottom: 0,
+                backgroundImage: 'url(/hero-yasmine-clean.png)',
+                backgroundSize: 'cover',
+                backgroundPosition: 'center',
+                filter: 'blur(20px) opacity(0.3) saturate(1.2)',
+                zIndex: -1,
+                pointerEvents: 'none'
+              }} />
+
+              <div className="container" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center', width: '100%', position: 'relative', zIndex: 1 }}>
                 
                 <motion.div 
                   initial={{ opacity: 0, scale: 0.8 }} 
@@ -94,9 +110,9 @@ function App() {
                     width: '260px',
                     height: '260px',
                     borderRadius: '50%',
-                    backgroundImage: 'url(/hero-yasmine.jpg)',
+                    backgroundImage: 'url(/hero-yasmine-clean.png)',
                     backgroundSize: 'cover',
-                    backgroundPosition: 'center 20%',
+                    backgroundPosition: 'center 10%',
                     margin: '0 auto 40px auto',
                     border: '3px solid rgba(212, 175, 55, 0.5)',
                     boxShadow: '0 0 50px rgba(212, 175, 55, 0.2), inset 0 0 40px rgba(0,0,0,0.5)',
