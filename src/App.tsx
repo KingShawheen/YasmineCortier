@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Play, Mic2, Mail, Home, Disc, Star, Calendar } from 'lucide-react';
+import { Play, Mic2, Mail, Home, Disc, Star, Calendar, Facebook, Youtube } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import './index.css';
 
@@ -213,6 +213,27 @@ function App() {
           )}
         </AnimatePresence>
       </main>
+
+      {/* Footer */}
+      <footer style={{ padding: '40px 24px', borderTop: '1px solid rgba(255,255,255,0.05)', marginTop: '40px', paddingBottom: '120px' }}>
+        <div className="container" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '24px' }}>
+          <div>
+            <h4 style={{ fontSize: '1.2rem', fontWeight: 800, letterSpacing: '1px', fontFamily: 'var(--font-heading)' }}>YASMINE CORTIER</h4>
+            <p style={{ color: 'var(--text-muted)', fontSize: '0.9rem', marginTop: '8px' }}>&copy; {new Date().getFullYear()} All Rights Reserved.</p>
+          </div>
+          <div style={{ display: 'flex', gap: '16px' }}>
+            <a href="https://www.facebook.com/Persiancomic" target="_blank" rel="noopener noreferrer" style={{ width: '48px', height: '48px', borderRadius: '50%', background: 'rgba(255,255,255,0.05)', display: 'flex', alignItems: 'center', justifyContent: 'center', transition: 'all 0.3s ease', color: 'var(--text-muted)' }} className="glow-hover">
+              <Facebook size={20} />
+            </a>
+            <a href="https://www.youtube.com/playlist?list=OLAK5uy_nD1ecUAlosXPVW70nTrhTDPmalVQn2Sl8" target="_blank" rel="noopener noreferrer" style={{ width: '48px', height: '48px', borderRadius: '50%', background: 'rgba(255,255,255,0.05)', display: 'flex', alignItems: 'center', justifyContent: 'center', transition: 'all 0.3s ease', color: 'var(--text-muted)' }} className="glow-hover">
+              <Youtube size={20} />
+            </a>
+            <a href="mailto:PersianComic@gmail.com?subject=Booking%20Inquiry%20-%20Yasmine%20Cortier" style={{ width: '48px', height: '48px', borderRadius: '50%', background: 'rgba(255,255,255,0.05)', display: 'flex', alignItems: 'center', justifyContent: 'center', transition: 'all 0.3s ease', color: 'var(--text-muted)' }} className="glow-hover">
+              <Mail size={20} />
+            </a>
+          </div>
+        </div>
+      </footer>
 
       {/* Mobile Bottom Navigation */}
       <nav className="mobile-nav glass-panel" style={{ position: 'fixed', bottom: '24px', left: '24px', right: '24px', zIndex: 100, display: 'none', justifyContent: 'space-between', padding: '16px 32px', borderRadius: '99px', backdropFilter: 'blur(24px)', WebkitBackdropFilter: 'blur(24px)' }}>
