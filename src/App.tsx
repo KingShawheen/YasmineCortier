@@ -124,8 +124,8 @@ function App() {
           {activeTab === 'music' && (
             <motion.section key="music" initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -20 }} transition={{ duration: 0.4 }} className="section-padding">
               <div className="container">
-                <h2 style={{ fontSize: '3rem', marginBottom: '16px' }}>The <span className="text-gradient">Music</span></h2>
-                <p style={{ color: 'var(--text-muted)', marginBottom: '64px' }}>Experience the 2011 defining R&B/Soul album, Freak Magnet.</p>
+                <h2 style={{ fontSize: '3rem', marginBottom: '16px', textAlign: 'center' }}>The <span className="text-gradient">Music</span></h2>
+                <p style={{ color: 'var(--text-muted)', marginBottom: '64px', textAlign: 'center' }}>Experience the 2011 defining R&B/Soul album, Freak Magnet.</p>
 
                 <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '32px' }}>
                   <div className="glass-panel" style={{ minHeight: '400px', position: 'relative', overflow: 'hidden', padding: 0 }}>
