@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Play, Mic2, Mail, Home, Disc, Star, Calendar, Facebook, Youtube } from 'lucide-react';
+import { Play, Mic2, Mail, Home, Disc, Star, Calendar, Facebook, Youtube, Instagram } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import './index.css';
 
@@ -227,6 +227,9 @@ function App() {
             <p style={{ color: 'var(--text-muted)', fontSize: '0.9rem', marginTop: '8px' }}>&copy; {new Date().getFullYear()} All Rights Reserved.</p>
           </div>
           <div style={{ display: 'flex', gap: '16px' }}>
+            <a href="https://www.instagram.com/persiancomic/" target="_blank" rel="noopener noreferrer" style={{ width: '48px', height: '48px', borderRadius: '50%', background: 'rgba(255,255,255,0.05)', display: 'flex', alignItems: 'center', justifyContent: 'center', transition: 'all 0.3s ease', color: 'var(--text-muted)' }} className="glow-hover">
+              <Instagram size={20} />
+            </a>
             <a href="https://www.facebook.com/Persiancomic" target="_blank" rel="noopener noreferrer" style={{ width: '48px', height: '48px', borderRadius: '50%', background: 'rgba(255,255,255,0.05)', display: 'flex', alignItems: 'center', justifyContent: 'center', transition: 'all 0.3s ease', color: 'var(--text-muted)' }} className="glow-hover">
               <Facebook size={20} />
             </a>
