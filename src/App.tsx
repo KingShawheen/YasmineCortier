@@ -19,7 +19,7 @@ function App() {
     { year: '2011', title: '"Freak Magnet" Released', desc: 'Dropped the definitive R&B/Soul album featuring hits like "Persian Conversion" and "Spiritually Just", and performed at Nugestock II at the Knitting Factory.' },
     { year: '2010', title: 'Spokane\'s Got Talent Finalist', desc: 'Showcased her hilarious Persian comic persona, reaching the finals of "Spokane\'s Got Talent".' },
     { year: '2000s', title: 'The Merq & Volcano\'s', desc: 'Hosted legendary, high-energy karaoke nights and DJ sets, cementing her local nightlife status.' },
-    { year: '1995-1996', title: 'Arrival in Spokane & Walk For Success', desc: 'Moved to the Spokane area and immediately began impacting the community, including her early involvement with the "Walk For Success" initiative.' }
+    { year: '1995-1996', title: 'Arrival & "Walk For Success"', desc: 'Moved to Spokane and immediately impacted the community by participating in the "Walk For Success"—a grassroots SCOPE initiative to promote neighborhood unity and stand against drugs and violence in the Edgecliff area.' }
   ];
 
   return (
