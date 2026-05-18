@@ -166,30 +166,14 @@ a {
 /* Ethereal Background Effect */
 .ethereal-bg {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: -100px;
+  left: -30vw;
   right: 0;
   bottom: 0;
   background-image: url(/hero-yasmine-clean.png);
   background-size: cover;
-  background-position: 70% top;
-  filter: blur(8px) opacity(0.4) saturate(1.2);
+  background-position: center top;
+  filter: blur(8px) opacity(0.35) saturate(1.2);
   z-index: -1;
   pointer-events: none;
-  -webkit-mask-image: radial-gradient(ellipse at center 40%, black 30%, transparent 80%);
-  mask-image: radial-gradient(ellipse at center 40%, black 30%, transparent 80%);
-}
-
-@media (max-width: 768px) {
-  .ethereal-bg {
-    background-size: auto 120vh;
-    background-position: 85% 20vh;
-    -webkit-mask-image: radial-gradient(ellipse at 20% 35vh, black 20%, transparent 75%);
-    mask-image: radial-gradient(ellipse at 20% 35vh, black 20%, transparent 75%);
-    transform: none;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-  }
 }
