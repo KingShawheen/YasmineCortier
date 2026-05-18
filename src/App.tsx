@@ -239,13 +239,13 @@ function App() {
       </main>
 
       {/* Footer */}
-      <footer style={{ padding: '40px 24px', borderTop: '1px solid rgba(255,255,255,0.05)', marginTop: '40px', paddingBottom: '120px' }}>
-        <div className="container" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '24px' }}>
+      <footer style={{ borderTop: '1px solid rgba(255,255,255,0.1)', marginTop: '64px', padding: '40px 0', background: 'var(--bg-dark)' }}>
+        <div className="container" style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', gap: '24px', textAlign: 'center' }}>
           <div>
-            <h4 style={{ fontSize: '1.2rem', fontWeight: 800, letterSpacing: '1px', fontFamily: 'var(--font-heading)' }}>YASMINE CORTIER</h4>
+            <h3 style={{ fontSize: '1.5rem', fontWeight: 700, margin: '0 0 8px 0', color: 'var(--text-main)' }}>Yasmine Cortier</h3>
             <p style={{ color: 'var(--text-muted)', fontSize: '0.9rem', marginTop: '8px' }}>&copy; {new Date().getFullYear()} All Rights Reserved.</p>
           </div>
-          <div style={{ display: 'flex', gap: '16px' }}>
+          <div style={{ display: 'flex', gap: '16px', justifyContent: 'center' }}>
             <a href="https://www.instagram.com/persiancomic/" target="_blank" rel="noopener noreferrer" style={{ width: '48px', height: '48px', borderRadius: '50%', background: 'rgba(255,255,255,0.05)', display: 'flex', alignItems: 'center', justifyContent: 'center', transition: 'all 0.3s ease', color: 'var(--text-muted)' }} className="glow-hover">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
             </a>
