@@ -102,13 +102,17 @@ function App() {
                 <p style={{ color: 'var(--text-muted)', marginBottom: '64px' }}>Experience the 2011 defining R&B/Soul album, Freak Magnet.</p>
 
                 <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '32px' }}>
-                  <div className="glass-panel" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', minHeight: '400px', position: 'relative', overflow: 'hidden', padding: 0 }}>
-                    <div style={{ position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, backgroundImage: 'url(/freak-magnet-cover.jpg)', backgroundSize: 'cover', backgroundPosition: 'center', filter: 'brightness(0.8)', zIndex: 0 }} />
-                    <div style={{ position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, background: 'linear-gradient(to top, rgba(15, 23, 42, 0.9), transparent)', zIndex: 1 }} />
-                    <div style={{ position: 'relative', zIndex: 2, padding: '40px', width: '100%', height: '100%', display: 'flex', flexDirection: 'column', justifyContent: 'flex-end', alignItems: 'center' }}>
-                      <h3 style={{ fontSize: '2.5rem', textShadow: '0 2px 10px rgba(0,0,0,0.5)' }}>Freak Magnet</h3>
-                      <p style={{ color: 'rgba(255, 255, 255, 0.8)', textShadow: '0 2px 5px rgba(0,0,0,0.5)' }}>Released 2011</p>
-                    </div>
+                  <div className="glass-panel" style={{ minHeight: '400px', position: 'relative', overflow: 'hidden', padding: 0 }}>
+                    <iframe 
+                      width="100%" 
+                      height="100%" 
+                      src="https://www.youtube.com/embed/mpWKpT6DhrU" 
+                      title="Yasmine Cortier - Freak Magnet" 
+                      frameBorder="0" 
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                      allowFullScreen
+                      style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', zIndex: 1 }}
+                    ></iframe>
                   </div>
 
                   <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
@@ -120,7 +124,14 @@ function App() {
                         </div>
                         <div style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
                           <span style={{ color: 'var(--text-muted)' }}>{track.duration}</span>
-                          <button style={{ background: 'transparent', border: 'none', color: 'var(--secondary)', cursor: 'pointer' }}>
+                          <button 
+                            onClick={(e) => {
+                              e.stopPropagation();
+                              window.open(`https://www.youtube.com/results?search_query=Yasmine+Cortier+${encodeURIComponent(track.title)}`, '_blank');
+                            }}
+                            style={{ background: 'transparent', border: 'none', color: 'var(--secondary)', cursor: 'pointer' }}
+                            title="Play on YouTube"
+                          >
                             <Play size={24} fill="currentColor" />
                           </button>
                         </div>
