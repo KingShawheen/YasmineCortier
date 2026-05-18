@@ -79,51 +79,43 @@ function App() {
         <AnimatePresence mode="wait">
           {activeTab === 'home' && (
             <motion.section key="home" initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -20 }} transition={{ duration: 0.4 }} style={{ minHeight: '80vh', display: 'flex', alignItems: 'center', padding: '40px 0' }}>
-              <div className="container">
-                <div style={{ display: 'flex', flexWrap: 'wrap', alignItems: 'center', gap: '48px', justifyContent: 'space-between' }}>
-                  
-                  {/* Left Column: Text */}
-                  <div style={{ flex: '1 1 500px', textAlign: 'left' }}>
-                    <h2 style={{ fontSize: '1.25rem', color: 'var(--primary)', letterSpacing: '4px', textTransform: 'uppercase', marginBottom: '16px', textShadow: '0 0 20px rgba(212, 175, 55, 0.3)' }}>
-                      The Essence of Soul
-                    </h2>
-                    <h1 style={{ fontSize: 'clamp(3.5rem, 8vw, 6.5rem)', fontWeight: 800, margin: '0 0 24px -4px', lineHeight: 1.05 }}>
-                      YASMINE<br/><span className="text-gradient">CORTIER</span>
-                    </h1>
-                    <p style={{ fontSize: '1.15rem', color: 'var(--text-muted)', maxWidth: '500px', marginBottom: '40px', lineHeight: 1.6 }}>
-                      Singer • DJ • Comedienne. Bringing magnetic presence, electric R&B, and premium nightlife energy to every stage.
-                    </p>
-                    <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap' }}>
-                      <button onClick={() => setActiveTab('music')} className="btn-primary" style={{ border: 'none' }}>
-                        <span>Listen to Freak Magnet</span>
-                        <Play size={20} />
-                      </button>
-                      <button onClick={() => setActiveTab('booking')} className="btn-outline">
-                        <span>Book Now</span>
-                      </button>
-                    </div>
-                  </div>
-
-                  {/* Right Column: Animated Photo */}
-                  <motion.div 
-                    initial={{ opacity: 0, scale: 0.8 }} 
-                    animate={{ opacity: 1, scale: 1 }} 
-                    transition={{ duration: 0.7, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
-                    style={{ flex: '1 1 400px', display: 'flex', justifyContent: 'center' }}
-                  >
-                    <div style={{
-                      width: '100%',
-                      maxWidth: '460px',
-                      aspectRatio: '0.85',
-                      borderRadius: '24px',
-                      backgroundImage: 'url(/hero-yasmine.jpg)',
-                      backgroundSize: 'cover',
-                      backgroundPosition: 'center 20%',
-                      boxShadow: '0 20px 40px rgba(0,0,0,0.5), 0 0 40px rgba(212, 175, 55, 0.2)',
-                      border: '1px solid rgba(255,255,255,0.1)'
-                    }} />
-                  </motion.div>
-
+              <div className="container" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center', width: '100%' }}>
+                
+                <motion.div 
+                  initial={{ opacity: 0, scale: 0.8 }} 
+                  animate={{ opacity: 1, scale: 1 }} 
+                  transition={{ duration: 0.7, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
+                  style={{
+                    width: '260px',
+                    height: '260px',
+                    borderRadius: '50%',
+                    backgroundImage: 'url(/hero-yasmine.jpg)',
+                    backgroundSize: 'cover',
+                    backgroundPosition: 'center 20%',
+                    margin: '0 auto 40px auto',
+                    border: '3px solid rgba(212, 175, 55, 0.5)',
+                    boxShadow: '0 0 50px rgba(212, 175, 55, 0.2), inset 0 0 40px rgba(0,0,0,0.5)',
+                    position: 'relative'
+                  }}
+                />
+                
+                <h2 style={{ fontSize: '1.25rem', color: 'var(--primary)', letterSpacing: '4px', textTransform: 'uppercase', marginBottom: '16px', textShadow: '0 0 20px rgba(212, 175, 55, 0.3)' }}>
+                  The Essence of Soul
+                </h2>
+                <h1 style={{ fontSize: 'clamp(4rem, 10vw, 9rem)', fontWeight: 800, margin: '0 0 24px 0', lineHeight: 1.05 }}>
+                  YASMINE<br/><span className="text-gradient">CORTIER</span>
+                </h1>
+                <p style={{ fontSize: '1.25rem', color: 'var(--text-muted)', maxWidth: '600px', margin: '0 auto 40px auto', lineHeight: 1.6 }}>
+                  Singer • DJ • Comedienne. Bringing magnetic presence, electric R&B, and premium nightlife energy to every stage.
+                </p>
+                <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap', justifyContent: 'center' }}>
+                  <button onClick={() => setActiveTab('music')} className="btn-primary" style={{ border: 'none' }}>
+                    <span>Listen to Freak Magnet</span>
+                    <Play size={20} />
+                  </button>
+                  <button onClick={() => setActiveTab('booking')} className="btn-outline">
+                    <span>Book Now</span>
+                  </button>
                 </div>
               </div>
             </motion.section>
