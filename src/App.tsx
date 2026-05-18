@@ -4,9 +4,12 @@ import './index.css';
 
 function App() {
   const tracks = [
-    { id: '1', title: 'Track 1 (Coming Soon)', duration: '--:--' },
-    { id: '2', title: 'Track 2 (Coming Soon)', duration: '--:--' },
-    { id: '3', title: 'Track 3 (Coming Soon)', duration: '--:--' },
+    { id: '1', title: 'Chance (Na Ham)', duration: '3:42' },
+    { id: '2', title: 'Solace (Original Mix)', duration: '4:15' },
+    { id: '3', title: 'Marsh Mellow (Original Mix)', duration: '3:50' },
+    { id: '4', title: 'Spiritually Just', duration: '3:30' },
+    { id: '5', title: 'Persian Conversion', duration: '4:01' },
+    { id: '6', title: 'Bonus Track!', duration: '2:58' },
   ];
 
   const milestones = [
@@ -45,7 +48,7 @@ function App() {
             </p>
             <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap' }}>
               <a href="#music" className="btn-primary">
-                <span>Listen to the Music</span>
+                <span>Listen to Freak Magnet</span>
                 <Play size={20} />
               </a>
               <a href="#book" className="btn-primary" style={{ background: 'transparent', border: '1px solid var(--primary)', color: 'var(--text-main)' }}>
@@ -74,8 +77,8 @@ function App() {
             <div className="glass-panel" style={{ padding: '40px', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', minHeight: '400px', position: 'relative', overflow: 'hidden' }}>
               <div style={{ position: 'absolute', top: '-50%', left: '-50%', right: '-50%', bottom: '-50%', background: 'conic-gradient(from 0deg, transparent, var(--secondary), var(--primary), transparent)', animation: 'spin 10s linear infinite', opacity: 0.1, zIndex: 0 }} />
               <Disc size={120} color="var(--primary)" style={{ zIndex: 1, marginBottom: '24px' }} />
-              <h3 style={{ fontSize: '2rem', zIndex: 1, textAlign: 'center' }}>Featured Tracks</h3>
-              <p style={{ color: 'var(--text-muted)', zIndex: 1 }}></p>
+              <h3 style={{ fontSize: '2rem', zIndex: 1, textAlign: 'center' }}>Freak Magnet</h3>
+              <p style={{ color: 'var(--text-muted)', zIndex: 1 }}>Released 2011</p>
             </div>
 
             {/* Tracklist */}

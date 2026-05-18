@@ -20,7 +20,15 @@ Yasmine Cortier is a prominent performer, singer, DJ, and karaoke host, primaril
 - **Note:** Distinct from the Egyptian actress Yasmine Sabry.
 
 ### Timeline
-- **Past & Ongoing:** Established herself as a central figure in local nightlife, frequently hosting high-energy karaoke nights and DJing at venues such as *The Merq* and *Volcano's Party Island* in the Spokane area. She also emceed various local events, cementing her status as an entertainment powerhouse.
+- **Pre-2011 & Ongoing:** Established herself as a central figure in local nightlife, frequently hosting high-energy karaoke nights and DJing at venues such as *The Merq* and *Volcano's Party Island* in the Spokane area. She also emceed various local events, cementing her status as an entertainment powerhouse.
+- **2011:** Released the R&B/Soul album ***Freak Magnet***.
+  - **Notable Tracks:** 
+    - *Chance (Na Ham)*
+    - *Solace (Original Mix)*
+    - *Marsh Mellow (Original Mix)*
+    - *Spiritually Just*
+    - *Persian Conversion*
+    - *Bonus Track!*
 - **Present & Future:** Expanding her digital presence with a premium portfolio showcase to connect with her audience, share her history, and accept future gig bookings via email.
 
 ## Security Policies
